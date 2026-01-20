@@ -6,7 +6,7 @@ import streamlit as st
 
 #Load environment variables from .env file
 #dotenv.load_dotenv()
-OPENAI_API_KEY = dotenv.get_key(dotenv.find_dotenv(), "OPENAI_API_KEY") 
+#OPENAI_API_KEY = dotenv.get_key(dotenv.find_dotenv(), "OPENAI_API_KEY") 
 
 #ChatOpenAI initialization
 llm = ChatOpenAI(model_name="gpt-4o-mini", api_key=OPENAI_API_KEY, temperature=0.7)
