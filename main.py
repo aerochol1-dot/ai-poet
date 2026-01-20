@@ -2,10 +2,10 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import streamlit as st
-import dotenv
+#import dotenv
 
 #Load environment variables from .env file
-dotenv.load_dotenv()
+#dotenv.load_dotenv()
 OPENAI_API_KEY = dotenv.get_key(dotenv.find_dotenv(), "OPENAI_API_KEY") 
 
 #ChatOpenAI initialization
